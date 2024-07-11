@@ -7,8 +7,8 @@
     <title>Product Card</title>
     <style>
         .item-card {
-            box-shadow: 3px 3px 3px rgb(169, 169, 169);
-            width: 200px;
+            box-shadow: 3px 3px 8px rgb(169, 169, 169);
+            /* width: 200px; */
             padding-bottom: 20px;
         }
 
@@ -24,23 +24,101 @@
             color: #000;
             padding: 5px 15px;
             border-radius: 20px;
-            box-shadow: 3px 3px 3px rgb(169, 169, 169);
+            box-shadow: 3px 3px 13px rgb(169, 169, 169);
             text-decoration: none;
         }
 
         .card-text {
             padding: 5px 5px;
         }
+
+        .btn {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(6, 200px);
+            justify-content: space-around;
+        }
+
+        @media screen and (max-width:600px) {
+            .card {
+                grid-template-columns: repeat(2, 200px);
+                row-gap: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="item-card">
-        <img src="panjabi.jpg" alt="">
-        <div class="card-text">
-            <h3>Panjabi Panjabi</h3>
-            <h1 style="font-size: 15px;">Price: $149 <span style="color: gray;"><strike>$189</strike></span></h1>
-            <a href="#">Add to cart</a>
+    <div class="card">
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <img src="panjabi.jpg" alt="">
+            <div class="card-text">
+                <h3 style="margin-top: -7px;">Panjabi Panjabi</h3>
+                <h1 style="font-size: 15px; margin-top: -7px; margin-bottom: 17px;">Price: $149 <span
+                        style="color: gray;"><strike>$189</strike></span></h1>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
